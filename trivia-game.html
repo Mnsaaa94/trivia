@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/trivia.css">
+</head>
+<body>
+	<main class="indigo">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h1 id="welcome">Welcome to Disney Trivia!</h1>
+				</div>
+			</div>
+			<div class="row" id="welcome-screen">
+				<div class="col s4 offset-s4 indigo darken-3">
+					<h5 id="directions">Enter player name:</h5>
+					<form>
+						<div id="form" class="input-field col s10">
+							<input id="player-name" type="text" placeholder="Type player name here">
+							<!-- <label class="active" for="player-name">Type player name here</label> -->
+							<button id="name-button" class="waves-effect waves-light btn indigo lighten-2" type="submit">Submit</button></br></br>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="dashboard">
+				<div><h4 id="show-player-name">Player Name</h4></div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/trivia.js"></script>
+</body>
+</html>
