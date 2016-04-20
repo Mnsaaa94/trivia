@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var playerName = '';
 	var correctCounter = 0;
 	var playerAnswer1 = '';
-	var correctAnswer1 = 'snow white';
+	var correctAnswer1 = 'snow white'
 	
 	var playerAnswer2 = '';
 	var corectAnswer2 = 'hi';
