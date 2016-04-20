@@ -1,8 +1,3 @@
-#hi
-{
-	
-}
-
 #welcome
 {
 	color: white;
@@ -19,5 +14,9 @@
 #show-player-name
 {
 	color: white;
+	text-align: center;
+}
+#score
+{
 	text-align: center;
 }
