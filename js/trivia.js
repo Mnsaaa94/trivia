@@ -2,11 +2,12 @@ $(document).ready(function() {
 	//what variable equals what value
 	var playerName = '';
 	var correctCounter = 0;
+	var lifeLine = 3;
 	var playerAnswer1 = '';
-	var correctAnswer1 = 'snow white'
+	var correctAnswer1 = 'snow white';
 	
 	var playerAnswer2 = '';
-	var corectAnswer2 = 'hi';
+	var corectAnswer2 = 'walt disney';
 
 	// Hide Player Name
 	$('#dashboard').hide();
@@ -38,6 +39,10 @@ $(document).ready(function() {
 		setTimeout(removeWelcomeScreen, 1000);
 	});
 
+	/***********************************************
+						QUESTION 1
+	***********************************************/
+
 	// Store answer 1
 	$('#question1-button').on('click', function(e) {
 		// prevents form from submitting to a database
@@ -55,20 +60,38 @@ $(document).ready(function() {
 		$('#show-correct-answer1').text(correctAnswer1);
 	};
 
+	// fade out message
+	function fadeOutAnswerCheck() {
+		$('#incorrect-message1').removeClass('fadeIn').addClass('fadeOut');
+	};
+
+	function fadeOutQuestion1() {
+		$('#question1').addClass('animated fadeOut');
+		setTimeout($('#question1').detach(), 2500);
+		$('#question2').show().addClass('animated fadeIn');
+	};
+
 	// Check answer 1
 	function checkAnswer1() {
 		if(playerAnswer1 === correctAnswer1) {
+			// if answer is right
 			console.log("Player's answer is correct!");
 			$('#correct-message1').show().addClass('animated fadeIn');
 			correctCounter++;
 			$('#score').text(correctCounter);
 		}
 		else {
+			// if answer is wrong
 			console.log("Player's answer is incorrect");
 			$('#incorrect-message1').show().addClass('animated fadeIn');
+			setTimeout(fadeOutAnswerCheck, 2500);
 		}
 	};
-/*
+
+	/**************************************************
+						QUESTION 2
+	**************************************************/
+
 	// Store answer 2
 	$('#question2-button').on('click', function(e) {
 		e.preventDefault();
@@ -82,6 +105,5 @@ $(document).ready(function() {
 		$('#show-player-answer2').text(playerAnswer2);
 		$('#show-correct-answer2').text(correctAnswer2);
 	};
-*/
 
 });
