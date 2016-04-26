@@ -32,6 +32,7 @@ $(document).ready(function() {
 	$('#correct-message5').hide();
 	$('#incorrect-message5').hide();
 	$('#lose-game-message').hide();
+	$('#win-game-message').hide();
 
 	// Allow user to type name immediately on page load
 	$('#player-name').focus();
@@ -334,7 +335,7 @@ $(document).ready(function() {
 	function fadeOutQuestion5() {
 		$('#question5').addClass('animated fadeOut');
 		setTimeout($('#question5').detach(), 2500);
-		//$('#question5').show().addClass('animated fadeIn');
+		$('#win-game-message').show().addClass('animated fadeIn');
 	};
 
 	function triesLeftCountdown() {
