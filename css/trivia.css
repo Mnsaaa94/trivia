@@ -11,7 +11,7 @@
 {
 	color: #c5cae9;
 }
-#show-player-name
+#dashboard
 {
 	color: white;
 	text-align: center;
@@ -19,4 +19,28 @@
 #score
 {
 	text-align: center;
+}
+#win-game-message
+{
+	text-align: center;
+}
+#question1
+{
+	color: white;
+}
+#question2
+{
+	color: white;
+}
+#question3
+{
+	color: white;
+}
+#question4
+{
+	color: white;
+}
+#question5
+{
+	color: white;
 }
