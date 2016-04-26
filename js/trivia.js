@@ -98,7 +98,7 @@ $(document).ready(function() {
 		triesLeft--;
 		$('#tries-left').text(triesLeft);
 		if(triesLeft === 0) {
-			$('#question1').addClass('animated fadeOut');
+			$('#question1').addClass('fadeOut');
 			$('#question1').detach();
 			$('#lose-game-message').show().addClass('animated fadeIn');
 		};
