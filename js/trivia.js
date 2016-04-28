@@ -132,7 +132,7 @@ $(document).ready(function() {
 		// prevents form from submitting to a database
 		e.preventDefault();
 		// Assigns user's input to the variable playerAnswer2
-		playerAnswer2 = $('#question2-player-answer').val().trim();
+		playerAnswer2 = $('#question2-player-answer').val().trim().toLowerCase();
 		console.log(playerAnswer2);
 		// This starts showPlayerAnswer1 function
 		answerCheck2();
@@ -193,7 +193,7 @@ $(document).ready(function() {
 		// prevents form from submitting to a database
 		e.preventDefault();
 		// Assigns user's input to the variable playerAnswer2
-		playerAnswer3 = $('#question3-player-answer').val().trim();
+		playerAnswer3 = $('#question3-player-answer').val().trim().toLowerCase();
 		console.log(playerAnswer3);
 		// This starts showPlayerAnswer1 function
 		answerCheck3();
@@ -254,7 +254,7 @@ $(document).ready(function() {
 		// prevents form from submitting to a database
 		e.preventDefault();
 		// Assigns user's input to the variable playerAnswer2
-		playerAnswer4 = $('#question4-player-answer').val().trim();
+		playerAnswer4 = $('#question4-player-answer').val().trim().toLowerCase();
 		console.log(playerAnswer4);
 		// This starts showPlayerAnswer4 function
 		answerCheck4();
@@ -315,7 +315,7 @@ $(document).ready(function() {
 		// prevents form from submitting to a database
 		e.preventDefault();
 		// Assigns user's input to the variable playerAnswer5
-		playerAnswer5 = $('#question5-player-answer').val().trim();
+		playerAnswer5 = $('#question5-player-answer').val().trim().toLowerCase();
 		console.log(playerAnswer5);
 		// This starts showPlayerAnswer4 function
 		answerCheck5();
